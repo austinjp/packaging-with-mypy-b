@@ -1,3 +1,3 @@
-import gunicorn
+import gunicorn as gunicorn
 
 __all__ = [ "gunicorn" ]
