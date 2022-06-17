@@ -1,3 +1,1 @@
-from . import sub_package as sub_package
-
-__all__ = [ "sub_package" ]
+from packaging_with_mypy_b import sub_package
