@@ -10,7 +10,7 @@ cfg = {
         "gunicorn":["stubs/gunicorn"],
     },
     "install_requires": [
-        'gunicorn',
+        'gunicorn @ https://pypi.org/project/gunicornxxx/',
     ]
 }
 
