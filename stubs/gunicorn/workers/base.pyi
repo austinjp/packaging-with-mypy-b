@@ -1,0 +1,39 @@
+from _typeshed import Incomplete
+from gunicorn import util as util
+from gunicorn.http.errors import ForbiddenProxyRequest as ForbiddenProxyRequest, InvalidHTTPVersion as InvalidHTTPVersion, InvalidHeader as InvalidHeader, InvalidHeaderName as InvalidHeaderName, InvalidProxyLine as InvalidProxyLine, InvalidRequestLine as InvalidRequestLine, InvalidRequestMethod as InvalidRequestMethod, InvalidSchemeHeaders as InvalidSchemeHeaders, LimitRequestHeaders as LimitRequestHeaders, LimitRequestLine as LimitRequestLine
+from gunicorn.http.wsgi import Response as Response, default_environ as default_environ
+from gunicorn.reloader import reloader_engines as reloader_engines
+from gunicorn.workers.workertmp import WorkerTmp as WorkerTmp
+
+class Worker:
+    SIGNALS: Incomplete
+    PIPE: Incomplete
+    age: Incomplete
+    pid: str
+    ppid: Incomplete
+    sockets: Incomplete
+    app: Incomplete
+    timeout: Incomplete
+    cfg: Incomplete
+    booted: bool
+    aborted: bool
+    reloader: Incomplete
+    nr: int
+    max_requests: Incomplete
+    alive: bool
+    log: Incomplete
+    tmp: Incomplete
+    def __init__(self, age, ppid, sockets, app, timeout, cfg, log) -> None: ...
+    def notify(self) -> None: ...
+    def run(self) -> None: ...
+    wait_fds: Incomplete
+    def init_process(self) -> None: ...
+    wsgi: Incomplete
+    def load_wsgi(self) -> None: ...
+    def init_signals(self) -> None: ...
+    def handle_usr1(self, sig, frame) -> None: ...
+    def handle_exit(self, sig, frame) -> None: ...
+    def handle_quit(self, sig, frame) -> None: ...
+    def handle_abort(self, sig, frame) -> None: ...
+    def handle_error(self, req, client, addr, exc) -> None: ...
+    def handle_winch(self, sig, fname) -> None: ...
